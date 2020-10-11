@@ -4,19 +4,96 @@
   <meta charset = "utf-8"><!--한국어-->
   <Title>my first webpage</title>
 
-<!-- Icons & Platform Specific Settings - Favicon generator used to generate the icons below http://realfavicongenerator.net/ -->
+  <!-- Icons & Platform Specific Settings - Favicon generator used to generate the icons below http://realfavicongenerator.net/ -->
+  <!-- favicon-32x32.png - For Safari on Mac OS. -->
+  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
 
-<!-- favicon-32x32.png - For Safari on Mac OS. -->
-<link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+    background-image: url('mainpage_bg.jpg');
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(255, 99, 71,0.2);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 
 <body>
-<h1><a href = "index.html">c1lee is offline</a></h1>
-<ol>
-  <li><a href = "1.html">HTML</a></li>
-  <li><a href = "2.html">Css</a></li>
-  <li><a href = "3.html">Javascript</a></li>
-</ol>
+<header><h2> 신_흥 사진관의 온라인 전시 📷</h1>
+<p>The image below is a link. Try to click on it.</p>
 
+<a href="http://bit.ly/tracingWaganWheels"><img src="link_icon.png" alt="HTML tutorial" style="width:500px;height:216px;"></a>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">신흥사진관</a></li>
+      <li><a href="#">재생사진 : 탈탈탈<br></a></li>
+      <li><a href="#">바퀴자국 추적하기<br>온라인, 20200810 - 20201231</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <a href="http://bit.ly/tracingWaganWheels"><img src="link_icon.png" alt="HTML tutorial" style="width:500px;height:216px;"></a>
+  </article>
+</section>
 </body>
